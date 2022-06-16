@@ -14,6 +14,7 @@ import { ChartsModule } from 'ng2-charts';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
+import { HabitacionesListaComponent } from '../../habitaciones/movimientos/habitaciones-lista.component';
 
 @NgModule({
   imports: [
@@ -27,7 +28,7 @@ import { UpgradeComponent } from '../../upgrade/upgrade.component';
   declarations: [
     DashboardComponent,
     UserProfileComponent,
-    TableListComponent,
+    HabitacionesListaComponent,
     UpgradeComponent,
     TypographyComponent,
     IconsComponent,

@@ -1,0 +1,96 @@
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title"> Simple Table</h4>
+        </div>
+        <div class="card-body">
+          <div class="container-fluid text-center">
+            <div class="table-responsive">
+              <table class="table">
+                <thead class="text-primary">
+                  <th>
+                    Habitación
+                  </th>
+                  <th>
+                    Tipo
+                  </th>
+                  <th>
+                    Placas Vehículo
+                  </th>
+                  <th>
+                    Adicional
+                  </th>
+                  <th>
+                    Entrada
+                  </th>
+                  <th>
+                    Salida
+                  </th>
+                  <th>
+                    Tiempo Restante
+                  </th>
+                  <th>
+                    Tarifa
+                  </th>
+                  <th>
+                    Horas
+                  </th>
+                  <th>
+                    Observaciones
+                  </th>
+                  <th>
+                    Acciones
+                  </th>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of habitacionListaMov">
+                    <td>
+                      {{item.habitacion_numero}}
+                    </td>
+                    <td>
+                      {{item.tipo_habitacion_nombre}}
+                    </td>
+                    <td>
+                      {{item.placa_vehiculo}}
+                    </td>
+                    <td>
+                      {{item.adicional}}
+                    </td>
+                    <td>
+                      {{item.entrada}}
+                    </td>
+                    <td>
+                      {{item.salida}}
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                      {{item.tarifa_precio | currency}}
+                    </td>
+                    <td>
+                      {{item.tarifa_hora}}
+                    </td>
+                    <td class="badge text-wrap text-start" style="width: 6rem;">
+                      {{item.observaciones}}
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-success mr-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Registrar Entrada"><i class="fas fa-sign-in-alt"></i></button>
+                      <button type="button" class="btn btn-warning mr-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Registrar Salida"><i class="fas fa-sign-out-alt"></i></button>
+                      <button type="button" class="btn btn-dark mr-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Bloquear Habitación"><i class="fas fa-lock"></i></button>
+                      <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="left" title="Añadir Consumo"><i class="fas fa-plus"></i></button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
